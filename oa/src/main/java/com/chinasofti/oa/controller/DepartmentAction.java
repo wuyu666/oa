@@ -2,6 +2,8 @@ package com.chinasofti.oa.controller;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +20,7 @@ import com.chinasofti.oa.service.IDepartmentService;
 @Controller
 @RequestMapping("/department")
 public class DepartmentAction {
-	@Autowired
+	@Resource
 	private IDepartmentService departmentService;
 	/**
 	 * 查询操作

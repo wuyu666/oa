@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Service;
+
 import com.chinasofti.oa.bean.Department;
 import com.chinasofti.oa.mapper.IDepartmentMapper;
 import com.chinasofti.oa.service.IDepartmentService;
@@ -12,6 +14,7 @@ import com.chinasofti.oa.service.IDepartmentService;
  * @author wy
  * 2017年6月15日
  */
+@Service("departmentServiceImpl")
 public class DepartmentServiceImpl implements IDepartmentService{
 	@Resource
 	private IDepartmentMapper departmentMapper;
