@@ -1,4 +1,9 @@
 package com.chinasofti.oa.mapper;
+
+import java.util.List;
+
+import com.chinasofti.oa.bean.Department;
+
 /**
  * 部门Mapper接口
  * @author wy
@@ -6,5 +11,28 @@ package com.chinasofti.oa.mapper;
  */
 
 public interface IDepartmentMapper {
-
+	/**
+	 * 查询部门
+	 * @param department
+	 * @return
+	 */
+	List<Department> queryDepartment(Department department);
+	/**
+	 * 修改部门
+	 * @param department
+	 * @return
+	 */
+	int updateDepartment(Department department);
+	/**
+	 * 添加部门
+	 * @param department
+	 * @return
+	 */
+	int insertDepartment(Department department);
+	/**
+	 * 删除部门
+	 * @param id
+	 * @return
+	 */
+	int deleteDepartment(int id);
 }

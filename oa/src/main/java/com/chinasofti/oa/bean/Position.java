@@ -5,7 +5,13 @@ package com.chinasofti.oa.bean;
  * 2017年6月15日
  */
 public class Position {
+	/**
+	 * 职位id
+	 */
 	private int pid;
+	/**
+	 * 职位名称
+	 */
 	private String pname;
 	public int getPid() {
 		return pid;

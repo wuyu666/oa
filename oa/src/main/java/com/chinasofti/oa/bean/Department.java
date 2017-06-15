@@ -5,9 +5,21 @@ package com.chinasofti.oa.bean;
  * 2017年6月15日
  */
 public class Department {
+	/**
+	 * 部门id
+	 */
 	private int did;
+	/**
+	 * 部门编号
+	 */
 	private String dnumber;
+	/**
+	 * 部门名字
+	 */
 	private String dname;
+	/**
+	 * 部门职位
+	 */
 	private Position position;
 	public int getDid() {
 		return did;
