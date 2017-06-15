@@ -2,7 +2,10 @@ package com.chinasofti.oa.service.impl;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import com.chinasofti.oa.bean.Department;
+import com.chinasofti.oa.mapper.IDepartmentMapper;
 import com.chinasofti.oa.service.IDepartmentService;
 /**
  * 部门Service接口实现类
@@ -10,29 +13,39 @@ import com.chinasofti.oa.service.IDepartmentService;
  * 2017年6月15日
  */
 public class DepartmentServiceImpl implements IDepartmentService{
+	@Resource
+	private IDepartmentMapper departmentMapper;
 
 	@Override
 	public List<Department> queryDepartment(Department department) {
 		// TODO Auto-generated method stub
-		return null;
+		return departmentMapper.queryDepartment(department);
 	}
 
 	@Override
-	public int updateDepartment(Department department) {
+	public boolean updateDepartment(Department department) {
 		// TODO Auto-generated method stub
-		return 0;
+		return departmentMapper.updateDepartment(department);
 	}
 
 	@Override
-	public int insertDepartment(Department department) {
+	public boolean insertDepartment(Department department) {
 		// TODO Auto-generated method stub
-		return 0;
+		return departmentMapper.insertDepartment(department);
 	}
 
 	@Override
-	public int deleteDepartment(int id) {
+	public boolean deleteDepartment(int id) {
 		// TODO Auto-generated method stub
-		return 0;
+		return departmentMapper.deleteDepartment(id);
 	}
+
+	@Override
+	public Department queryDepartmentById(int id) {
+		// TODO Auto-generated method stub
+		return departmentMapper.queryDepartmentById(id);
+	}
+
+	
 
 }

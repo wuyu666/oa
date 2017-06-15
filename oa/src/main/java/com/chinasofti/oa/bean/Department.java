@@ -1,4 +1,7 @@
 package com.chinasofti.oa.bean;
+
+import java.util.List;
+
 /**
  * 部门对象类
  * @author wy
@@ -20,7 +23,8 @@ public class Department {
 	/**
 	 * 部门职位
 	 */
-	private Position position;
+	private List<Position> positions;
+	
 	public int getDid() {
 		return did;
 	}
@@ -39,15 +43,17 @@ public class Department {
 	public void setDname(String dname) {
 		this.dname = dname;
 	}
-	public Position getPosition() {
-		return position;
+	public List<Position> getPositions() {
+		return positions;
 	}
-	public void setPosition(Position position) {
-		this.position = position;
+	public void setPositions(List<Position> positions) {
+		this.positions = positions;
 	}
 	@Override
 	public String toString() {
-		return "Department [did=" + did + ", dnumber=" + dnumber + ", dname=" + dname + ", position=" + position + "]";
+		return "Department [did=" + did + ", dnumber=" + dnumber + ", dname=" + dname + ", positions=" + positions
+				+ "]";
 	}
+
 	
 }

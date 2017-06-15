@@ -18,21 +18,27 @@ public interface IDepartmentService {
 	 */
 	List<Department> queryDepartment(Department department);
 	/**
+	 * 根据id查询
+	 * @param id
+	 * @return
+	 */
+	Department queryDepartmentById(int id);
+	/**
 	 * 修改部门
 	 * @param department
 	 * @return
 	 */
-	int updateDepartment(Department department);
+	boolean updateDepartment(Department department);
 	/**
 	 * 添加部门
 	 * @param department
 	 * @return
 	 */
-	int insertDepartment(Department department);
+	boolean insertDepartment(Department department);
 	/**
 	 * 删除部门
 	 * @param id
 	 * @return
 	 */
-	int deleteDepartment(int id);
+	boolean deleteDepartment(int id);
 }
