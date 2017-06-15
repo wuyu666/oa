@@ -7,6 +7,14 @@
 <title>部门管理</title>
 </head>
 <body>
-	
+	<div>
+		<form id="dform">
+			<label>部门编号：</label><input name="dnumber"><br>
+			<label>部门名称：</label><input name="dname"><br>
+			<select>
+				<option >
+			</select>
+		</form>
+	</div>
 </body>
 </html>
