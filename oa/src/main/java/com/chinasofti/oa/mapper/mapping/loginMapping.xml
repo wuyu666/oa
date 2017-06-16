@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.chinasofti.oa.mapper.LogMapper">
+      <resultMap type="log" id="logs">
+          <id property="lid" column="lid"/>
+          <result property="username" column="username"/>
+          <result property="password" column="password"/>
+      </resultMap>
+      <select id="querylogin" parameterType="log" resultMap="logs">
+          <if test="username !=null and username !=''">
+               and username=#{username}
+          </if>
+          <if test="password !=null and username !=''">
+               and password=#{password}
+          </if>
+      </select>   
+  
+  </mapper>
