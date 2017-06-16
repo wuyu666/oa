@@ -21,8 +21,7 @@ public class NoticeController {
 	@RequestMapping("/doSelect")
 	@ResponseBody
 	public String doSelect(Page page){
-	List select=noticeService.queryNotice(page);
-	System.err.println(select.toString());
+	
 	return null;
 	}
 }
