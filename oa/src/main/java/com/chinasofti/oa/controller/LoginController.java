@@ -25,6 +25,7 @@ public class LoginController {
 	@Autowired 
 	private ILoginService loginService;
    //登录的查询方法
+	
 	@RequestMapping("/queryLogin")
 	@ResponseBody
 	public String queryLogin(Log log,HttpServletRequest request,HttpServletResponse response,Model model) throws IOException{
