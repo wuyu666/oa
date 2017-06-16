@@ -18,7 +18,7 @@
            <result property="upotourl" column="upotourl"/>
           
       </resultMap>
-      <select id="query" parameterType="personal" parameterMap="personals">
+      <select id="query" parameterType="personal" resultMap="personals">
           select * from t_user where uid=#{uid}
       </select>
   </mapper>
